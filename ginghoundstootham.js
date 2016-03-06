@@ -84,12 +84,12 @@ function drawStripedSquare(x, y, thisDiagonalsStripeEdgeModuli) {
 
 for (var x = 0; x < DIMENSION; x++) {
   for (var y = 0; y < DIMENSION; y++) {
-    if (x % 2 !== 0 && y % 2 === 0) solidSquare(COLOR_A);
-    if (x % 2 === 0 && y % 2 !== 0) solidSquare(COLOR_B);
+    if (x % 2 !== 0 && y % 2 === 0) solidSquare(COLOR_A, x, y);
+    if (x % 2 === 0 && y % 2 !== 0) solidSquare(COLOR_B, x, y);
   }
 }
 
-function solidSquare(color) {
+function solidSquare(color, x, y) {
   ctx.fillStyle = color;
   ctx.beginPath();
   ctx.rect(x * SCALE, y * SCALE, SCALE, SCALE);
