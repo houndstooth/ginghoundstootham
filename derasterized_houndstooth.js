@@ -7,8 +7,8 @@ const ctx = canvas.getContext('2d');
 //user settings
 
 ctx.lineWidth = 1;
-const SCALE = 25;
-const DIMENSION = 32;
+const SCALE = 50;
+const DIMENSION = 16;
 WIDTH = HEIGHT = canvas.width = canvas.height = SCALE * DIMENSION;
 const STRIPE_COUNT = 3;
 const COLOR_A = "#000";
@@ -50,6 +50,20 @@ function stripedSquare(color, x, y) {
   ctx.lineTo((x + 1 - Math.sqrt(2)/2) * SCALE, (y + 1) * SCALE);
   ctx.closePath();
   ctx.fill();
+
+  // ctx.beginPath();
+  // ctx.moveTo(x * SCALE, y * SCALE);
+  // ctx.lineTo((x + (2/3)) * SCALE, y * SCALE);
+  // ctx.lineTo(x * SCALE, (y + (2/3)) * SCALE);
+  // ctx.closePath();
+  // ctx.fill();
+  //
+  // ctx.beginPath();
+  // ctx.moveTo((x + 1) * SCALE, (y + 1 - (2/3)) * SCALE);
+  // ctx.lineTo((x + 1) * SCALE, (y + 1) * SCALE);
+  // ctx.lineTo((x + 1 - (2/3)) * SCALE, (y + 1) * SCALE);
+  // ctx.closePath();
+  // ctx.fill();
 }
 
 function switchColor(color) {
