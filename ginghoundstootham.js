@@ -13,7 +13,7 @@ WIDTH = HEIGHT = canvas.width = canvas.height = SCALE * DIMENSION;
 const STRIPE_COUNT = triangularNumber(DIMENSION + 1);
 const COLOR_A = "#000";
 const COLOR_B = "#fff";
-const THINNING_RATE = 1/2;
+const THINNING_RATE = 1/4;
 
 function triangularNumber(n) {
   return n * (n + 1) / 2;
