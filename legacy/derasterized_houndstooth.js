@@ -79,3 +79,5 @@ function stripedSquare(color, x, y) {
 function switchColor(color) {
   return color === COLOR_A ? COLOR_B : COLOR_A;
 }
+
+export default () => {}
