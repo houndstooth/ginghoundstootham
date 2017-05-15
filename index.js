@@ -1,3 +1,5 @@
-import ginghoundstootham from './legacy/derasterized_houndstooth'
+import execute from './common/execute'
+
+const ginghoundstootham = execute
 
 export { ginghoundstootham }
